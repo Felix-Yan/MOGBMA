@@ -6,12 +6,14 @@ state        = ec.graph.GraphState
 pop		     = ec.Population
 init		 = ec.graph.GraphInitializer
 finish		 = ec.simple.SimpleFinisher
-breed		 = ec.multiobjective.nsga2.NSGA2Breeder
+breed		 = ec.graph.MOGBMABreeder
+#breed		 = ec.multiobjective.nsga2.NSGA2Breeder
 eval		 = ec.multiobjective.nsga2.NSGA2Evaluator
 #stat		 = ec.simple.SimpleStatistics
 #stat        = ec.simple.SimpleShortStatistics
 #stat         = ec.graph.GraphStatistics
-stat         = ec.multiobjective.nsga2.NSGA2Statistics
+stat         = ec.multiobjective.MultiObjectiveStatistics
+stat.front   = $front.stat
 exch		 = ec.simple.SimpleExchanger
 
 generations		        = 51

@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.Set;
 
 import ec.Individual;
+import ec.multiobjective.MultiObjectiveFitness;
 import ec.simple.SimpleFitness;
 import ec.util.Parameter;
 
@@ -99,13 +100,13 @@ public class GraphIndividual extends Individual {
 
 	public GraphIndividual(){
 		super();
-		super.fitness = new SimpleFitness();
+		super.fitness = new MultiObjectiveFitness();
 		super.species = new GraphSpecies();
 	}
 
 	public GraphIndividual(Set<Node> unused) {
 		super();
-		super.fitness = new SimpleFitness();
+		super.fitness = new MultiObjectiveFitness();
 		super.species = new GraphSpecies();
 		this.unused = unused;
 	}
