@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- "Res" stands for response time, and it is between 1 and 1000 -->
+<!-- "Pri" stands for price, and it is between 1 and 4 -->
+<!-- All other QoS values are between 0 and 1, and "Lat" is not used -->
+<services>
+	<service name="serv1a" Res="1000" Ava="0.8" Suc="0.8" Rel="0.6"
+		Lat="0" Pri="4">
+		<inputs>
+			<instance name="fruit_inst" />
+		</inputs>
+		<outputs>
+			<instance name="city_inst" />
+			<instance name="box_inst" />
+		</outputs>
+	</service>
+	<service name="serv2a" Res="500" Ava="0.5" Suc="0.3" Rel="0.9"
+		Lat="0" Pri="2">
+		<inputs>
+			<instance name="canine_inst" />
+		</inputs>
+		<outputs>
+			<instance name="cat_inst" />
+			<instance name="broccoli_inst" />
+		</outputs>
+	</service>
+	<service name="serv3a" Res="700" Ava="0.4" Suc="0.6" Rel="0.4"
+		Lat="0" Pri="3">
+		<inputs>
+			<instance name="container_inst" />
+			<instance name="feline_inst" />
+		</inputs>
+		<outputs>
+			<instance name="house_inst" />
+			<instance name="horse_inst" />
+		</outputs>
+	</service>
+	<service name="serv4a" Res="200" Ava="0.7" Suc="0.7" Rel="0.5"
+		Lat="0" Pri="1">
+		<inputs>
+			<instance name="location_inst" />
+			<instance name="building_inst" />
+		</inputs>
+		<outputs>
+			<instance name="frog_inst" />
+		</outputs>
+	</service>
+	<service name="serv5a" Res="800" Ava="0.9" Suc="0.5" Rel="0.8"
+		Lat="0" Pri="2">
+		<inputs>
+			<instance name="ruminant_inst" />
+			<instance name="cruciferous_inst" />
+		</inputs>
+		<outputs>
+			<instance name="crocodile_inst" />
+		</outputs>
+	</service>
+	<service name="serv6a" Res="900" Ava="0.6" Suc="0.4" Rel="0.3"
+		Lat="0" Pri="3">
+		<inputs>
+			<instance name="food_inst" />
+			<instance name="animal_inst" />
+		</inputs>
+		<outputs>
+			<instance name="croissant_inst" />
+			<instance name="brie_inst" />
+		</outputs>
+	</service>
+	<service name="serv7a" Res="400" Ava="0.1" Suc="0.9" Rel="0.7"
+		Lat="0" Pri="4">
+		<inputs>
+			<instance name="bread_inst" />
+		</inputs>
+		<outputs>
+			<instance name="cod_inst" />
+		</outputs>
+	</service>
+	<service name="serv8a" Res="600" Ava="0.8" Suc="0.7" Rel="0.6"
+		Lat="0" Pri="1">
+		<inputs>
+			<instance name="cheese_inst" />
+		</inputs>
+		<outputs>
+			<instance name="merlot_inst" />
+		</outputs>
+	</service>
+	<service name="serv9a" Res="500" Ava="0.6" Suc="0.6" Rel="0.6"
+		Lat="0" Pri="3">
+		<inputs>
+			<instance name="fish_inst" />
+			<instance name="wine_inst" />
+		</inputs>
+		<outputs>
+			<instance name="salamander_inst" />
+			<instance name="turtle_inst" />
+		</outputs>
+	</service>
+	<service name="serv1b" Res="500" Ava="0.4" Suc="0.9" Rel="0.8"
+		Lat="0" Pri="1">
+		<inputs>
+			<instance name="food_inst" />
+		</inputs>
+		<outputs>
+			<instance name="smallcity_inst" />
+			<instance name="bottle_inst" />
+		</outputs>
+	</service>
+	<service name="serv2b" Res="800" Ava="0.8" Suc="0.4" Rel="0.6"
+		Lat="0" Pri="4">
+		<inputs>
+			<instance name="animal_inst" />
+		</inputs>
+		<outputs>
+			<instance name="leopard_inst" />
+			<instance name="cauliflower_inst" />
+		</outputs>
+	</service>
+	<service name="serv3b" Res="700" Ava="0.7" Suc="0.8" Rel="0.5"
+		Lat="0" Pri="2">
+		<inputs>
+			<instance name="container_inst" />
+			<instance name="feline_inst" />
+		</inputs>
+		<outputs>
+			<instance name="shed_inst" />
+			<instance name="cow_inst" />
+		</outputs>
+	</service>
+	<service name="serv4b" Res="400" Ava="0.6" Suc="0.6" Rel="0.4"
+		Lat="0" Pri="2">
+		<inputs>
+			<instance name="location_inst" />
+			<instance name="building_inst" />
+		</inputs>
+		<outputs>
+			<instance name="toad_inst" />
+		</outputs>
+	</service>
+	<service name="serv5b" Res="600" Ava="0.9" Suc="0.9" Rel="0.9"
+		Lat="0" Pri="3">
+		<inputs>
+			<instance name="ruminant_inst" />
+			<instance name="cruciferous_inst" />
+		</inputs>
+		<outputs>
+			<instance name="snake_inst" />
+		</outputs>
+	</service>
+	<service name="serv6b" Res="100" Ava="0.4" Suc="0.8" Rel="0.7"
+		Lat="0" Pri="2">
+		<inputs>
+			<instance name="fruit_inst" />
+			<instance name="mammal_inst" />
+		</inputs>
+		<outputs>
+			<instance name="baguette_inst" />
+			<instance name="edam_inst" />
+		</outputs>
+	</service>
+	<service name="serv7b" Res="300" Ava="0.5" Suc="0.7" Rel="0.9"
+		Lat="0" Pri="1">
+		<inputs>
+			<instance name="bread_inst" />
+		</inputs>
+		<outputs>
+			<instance name="salmon_inst" />
+		</outputs>
+	</service>
+	<service name="serv8b" Res="900" Ava="0.5" Suc="0.6" Rel="0.9"
+		Lat="0" Pri="4">
+		<inputs>
+			<instance name="cheese_inst" />
+		</inputs>
+		<outputs>
+			<instance name="shiraz_inst" />
+		</outputs>
+	</service>
+	<service name="serv9b" Res="500" Ava="0.5" Suc="0.5" Rel="0.5"
+		Lat="0" Pri="2">
+		<inputs>
+			<instance name="animal_inst" />
+			<instance name="beverage_inst" />
+		</inputs>
+		<outputs>
+			<instance name="newt_inst" />
+			<instance name="alligator_inst" />
+		</outputs>
+	</service>
+</services>

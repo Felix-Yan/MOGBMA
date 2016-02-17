@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problemStructure>
+  <task>
+    <provided>
+      <instance name="city"/>
+      <instance name="duration"/>
+      <instance name="country"/>
+    </provided>
+    <wanted>
+      <instance name="weatherseason"/>
+      <instance name="map"/>
+      <instance name="hotel"/>
+    </wanted>
+  </task>
+  <solutions />
+</problemStructure>

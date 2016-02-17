@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problemStructure>
+  <task>
+    <provided>
+      <instance name="country"/>
+      <instance name="town"/>
+      <instance name="recommendedprice"/>
+    </provided>
+    <wanted>
+      <instance name="coffee"/>
+      <instance name="whiskey"/>
+    </wanted>
+  </task>
+  <solutions />
+</problemStructure>

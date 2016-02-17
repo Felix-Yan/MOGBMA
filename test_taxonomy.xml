@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taxonomy>
+	<concept name="thing">
+		<instance name="thing_inst" />
+		<concept name="animal">
+			<instance name="animal_inst" />
+			<concept name="mammal">
+				<instance name="mammal_inst" />
+				<concept name="canine">
+					<instance name="canine_inst" />
+					<concept name="dog">
+						<instance name="dog_inst" />
+					</concept>
+				</concept>
+				<concept name="feline">
+					<instance name="feline_inst" />
+					<concept name="cat">
+						<instance name="cat_inst" />
+					</concept>
+					<concept name="leopard">
+						<instance name="leopard_inst" />
+					</concept>
+				</concept>
+				<concept name="ruminant">
+					<instance name="ruminant_inst" />
+					<concept name="horse">
+						<instance name="horse_inst" />
+					</concept>
+					<concept name="cow">
+						<instance name="cow_inst" />
+					</concept>
+				</concept>
+			</concept>
+
+			<concept name="fish">
+				<instance name="fish_inst" />
+				<concept name="cod">
+					<instance name="cod_inst" />
+				</concept>
+				<concept name="salmon">
+					<instance name="salmon_inst" />
+				</concept>
+			</concept>
+			<concept name="reptile">
+				<instance name="reptile_inst" />
+				<concept name="alligator">
+					<instance name="alligator_inst" />
+				</concept>
+				<concept name="crocodile">
+					<instance name="crocodile_inst" />
+				</concept>
+				<concept name="turtle">
+					<instance name="turtle_inst" />
+				</concept>
+				<concept name="snake">
+					<instance name="snake_inst" />
+				</concept>
+			</concept>
+			<concept name="amphibian">
+				<instance name="amphibian_inst" />
+				<concept name="frog">
+					<instance name="frog_inst" />
+				</concept>
+				<concept name="toad">
+					<instance name="toad_inst" />
+				</concept>
+				<concept name="newt">
+					<instance name="newt_inst" />
+				</concept>
+				<concept name="salamander">
+					<instance name="salamander_inst" />
+				</concept>
+			</concept>
+		</concept>
+		<concept name="container">
+			<instance name="container_inst" />
+			<concept name="box">
+				<instance name="box_inst" />
+			</concept>
+			<concept name="bottle">
+				<instance name="bottle_inst" />
+			</concept>
+		</concept>
+		<concept name="building">
+			<instance name="building_inst" />
+			<concept name="house">
+				<instance name="house_inst" />
+			</concept>
+			<concept name="shed">
+				<instance name="shed_inst" />
+			</concept>
+		</concept>
+		<concept name="beverage">
+			<instance name="beverage_inst" />
+			<concept name="wine">
+				<instance name="wine_inst" />
+				<concept name="shiraz">
+					<instance name="shiraz_inst" />
+				</concept>
+				<concept name="merlot">
+					<instance name="merlot_inst" />
+				</concept>
+			</concept>
+		</concept>
+		<concept name="location">
+			<instance name="location_inst" />
+			<concept name="city">
+				<instance name="city_inst" />
+				<concept name="smallcity">
+					<instance name="smallcity_inst" />
+				</concept>
+			</concept>
+		</concept>
+		<concept name="food">
+			<instance name="food_inst" />
+			<concept name="vegetable">
+				<instance name="vegetable_inst" />
+				<concept name="cruciferous">
+					<instance name="cruciferous_inst" />
+					<concept name="broccoli">
+						<instance name="broccoli_inst" />
+					</concept>
+					<concept name="cauliflower">
+						<instance name="cauliflower_inst" />
+					</concept>
+				</concept>
+			</concept>
+			<concept name="fruit">
+				<instance name="fruit_inst" />
+				<concept name="banana">
+					<instance name="banana_inst" />
+				</concept>
+			</concept>
+			<concept name="bread">
+				<instance name="bread_inst" />
+				<concept name="croissant">
+					<instance name="croissant_inst" />
+				</concept>
+				<concept name="baguette">
+					<instance name="baguette_inst" />
+				</concept>
+			</concept>
+			<concept name="cheese">
+				<instance name="cheese_inst" />
+				<concept name="brie">
+					<instance name="brie_inst" />
+				</concept>
+				<concept name="edam">
+					<instance name="edam_inst" />
+				</concept>
+			</concept>
+		</concept>
+	</concept>
+</taxonomy>

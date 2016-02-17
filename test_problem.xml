@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problemStructure>
+	<task>
+		<provided>
+			<instance name="banana_inst" />
+			<instance name="dog_inst" />
+		</provided>
+		<wanted>
+			<instance name="amphibian_inst" />
+			<instance name="reptile_inst" />
+		</wanted>
+	</task>
+	<solutions />
+</problemStructure>

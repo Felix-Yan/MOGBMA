@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problemStructure>
+  <task>
+    <provided>
+      <instance name="academic-item-number"/>
+    </provided>
+    <wanted>
+      <instance name="maxprice"/>
+      <instance name="book"/>
+    </wanted>
+  </task>
+  <solutions />
+</problemStructure>
