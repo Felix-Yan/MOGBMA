@@ -12,6 +12,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 import ec.EvolutionState;
+import ec.Fitness;
 import ec.Individual;
 import ec.Species;
 import ec.util.Parameter;
@@ -33,15 +34,7 @@ public class GraphSpecies extends Species {
 		GraphInitializer init = (GraphInitializer) state.initializer;
 		GraphIndividual graph = createNewGraph(null, state, init.startNode.clone(), init.endNode.clone(), init.relevant);
 		//init.calculateMultiplicativeNormalisationBounds(graph.considerableNodeMap.values());
-		//debug
-		/*if(!graph.validation()){
-			throw new IllegalArgumentException("Graph's edges and nodes are not consistent");
-		}*/
-		//debug
-		/*if(count==499){
-			System.out.println("why stuck?");
-		}*/
-		//System.out.println(count++);
+
 		return graph;
 	}
 
@@ -70,6 +63,9 @@ public class GraphSpecies extends Species {
 
 		finishConstructingGraph(currentEndInputs, end, candidateList, connections, init, newGraph, mergedGraph, seenNodes, relevant);
 
+		//each individual should have initialized species objective function
+		newGraph.fitness = (Fitness)(f_prototype.clone());
+		
 		return newGraph;
 	}
 
@@ -456,7 +452,7 @@ public class GraphSpecies extends Species {
 
 			if ( !isContained ) {
 				System.out.println( "Outgoing edge for node " + fromNode.getName() + " not detected." );
-						return false;
+				return false;
 			}
 
 			//Node toNode = e.getToNode();
@@ -472,7 +468,7 @@ public class GraphSpecies extends Species {
 
 			if ( !isContained ) {
 				System.out.println( "Incoming edge for node " + toNode.getName() + " not detected." );
-						return false;
+				return false;
 			}
 		}
 		//System.out.println("----------------------------------------------1");
@@ -493,7 +489,7 @@ public class GraphSpecies extends Species {
 
 			if ( !isContained ) {
 				System.out.println( "Considerable: Outgoing edge for node " + fromNode.getName() + " not detected." );
-						return false;
+				return false;
 			}
 
 			Node toNode = graph.considerableNodeMap.get( e.getToNode().getName());
