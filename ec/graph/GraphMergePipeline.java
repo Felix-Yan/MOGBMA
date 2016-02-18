@@ -63,7 +63,8 @@ public class GraphMergePipeline extends BreedingPipeline {
 
 			if (!init.overlapEnabled || enoughOverlap(g1, g2, init.overlapPercentage)) {
 				GraphIndividual newG = mergeGraphs(g1, g2, init, state);
-				GraphSpecies species = (GraphSpecies) newG.species;
+				//This is to access the population species
+				GraphSpecies species = (GraphSpecies)(state.population.subpops[0].species);
 				inds[q] = species.createNewGraph(newG, state, init.startNode.clone(), init.endNode.clone(), init.relevant);
 			}
 			else {
@@ -120,8 +121,6 @@ public class GraphMergePipeline extends BreedingPipeline {
 			toNode.getIncomingEdgeList().add(newE);
 		}
 		init.removeDanglingNodes(newG);
-		//This is to assign species to the newly created individual newG
-		newG.species = (GraphSpecies)(state.population.subpops[0].species);
 		return newG;
 	}
 
