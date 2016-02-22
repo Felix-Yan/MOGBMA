@@ -8,12 +8,14 @@ init		 = ec.graph.GraphInitializer
 finish		 = ec.simple.SimpleFinisher
 #breed		 = ec.graph.MOGBMABreeder
 breed		 = ec.multiobjective.nsga2.NSGA2Breeder
-eval		 = ec.multiobjective.nsga2.NSGA2Evaluator
+#eval		 = ec.multiobjective.nsga2.NSGA2Evaluator
+eval		 = ec.graph.MOGBMAEvaluator
 #stat		 = ec.simple.SimpleStatistics
 #stat        = ec.simple.SimpleShortStatistics
 #stat         = ec.graph.GraphStatistics
 stat         = ec.multiobjective.MultiObjectiveStatistics
-stat.front   = $front.stat
+stat.front   = $front.stat
+
 exch		 = ec.simple.SimpleExchanger
 
 generations		        = 51
@@ -46,7 +48,7 @@ pop.subpop.0.species.pipe.num-sources          = 3
 pop.subpop.0.species.pipe.source.0             = ec.graph.GraphMergePipeline
 pop.subpop.0.species.pipe.source.0.prob        = 0.8
 pop.subpop.0.species.pipe.source.0.num-sources = 2
-pop.subpop.0.species.pipe.source.1             = ec.graph.GraphMutationPipeline
+pop.subpop.0.species.pipe.source.1             = ec.graph.GraphMemeticPipeline
 pop.subpop.0.species.pipe.source.1.prob        = 0.1
 pop.subpop.0.species.pipe.source.1.num-sources = 1
 pop.subpop.0.species.pipe.source.2             = ec.graph.GraphReproductionPipeline

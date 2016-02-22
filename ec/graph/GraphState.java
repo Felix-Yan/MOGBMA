@@ -6,6 +6,7 @@ Licensed under the Academic Free License version 3.0
 See the file "LICENSE" for more information
  */
 package ec.graph;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import ec.*;
@@ -24,6 +25,15 @@ public class GraphState extends SimpleEvolutionState
 {
 	private int totalNodeOpt = 0;//count the total number of nodeOpt
 	private int totalEdgeOpt = 0;//count the total number of edgeOpt
+	private ArrayList ranks;
+
+	public ArrayList getRanks() {
+		return ranks;
+	}
+
+	public void setRanks(ArrayList ranks) {
+		this.ranks = ranks;
+	}
 
 	/**
 	 * setter for totalNodeOpt
